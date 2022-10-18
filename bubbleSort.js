@@ -61,20 +61,45 @@
 // console.log("x = " + x);
 // console.log("y = " + y);
 
-let fruits = [
-    {
-        fruit_name: "Apple",
-        fruit_color: "Red"
-    },
-    {
-        fruit_name:"Grapes",
-        fruit_color:"green"
-    },
-    {
-        fruit_name:"Kiwi",
-        fruit_color:"green"
-    }
-];
+// let fruits = [
+//     {
+//         fruit_name: "Apple",
+//         fruit_color: "Red"
+//     },
+//     {
+//         fruit_name:"Grapes",
+//         fruit_color:"green"
+//     },
+//     {
+//         fruit_name:"Kiwi",
+//         fruit_color:"green"
+//     }
+// ];
 
-let filtered_fruits = fruits.filter((fruit)=> fruit.fruit_color==="Red")
-    console.log(filtered_fruits);
+// let filtered_fruits = fruits.filter((fruit)=> fruit.fruit_color==="Red")
+//    console.log(filtered_fruits);
+
+
+///////////////////key:pair array/////////
+
+let book_id = [1,2,3]
+
+let book_names = [
+    "Live Life Happily...!!",
+    "Be Energetic Always...!!",
+    "Earn Respect...!!"
+
+];
+let book_author = ["Aman", "Ram", "Shyam"];
+
+let book_copies = [10,20,30];
+
+let book_details = book_id.map((id, index_value)=>{
+    return {
+        id : id,
+        book_names:book_names[index_value],
+        book_author:book_author[index_value],
+        book_copies:book_copies[index_value]
+    }
+});
+console.log(book_details)
