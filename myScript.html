@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My First web page</title>
+	<!-- <h1 style="text-align: center;">WELCOME TO JAVASCRIPT</h1> -->
+	<style>
+		#btnOne {
+			position: absolute;
+			left: 10px;
+			color: #000080;
+			background-color: darkred;
+			font-size: 20px;
+		}
+
+		#btnTwo {
+			position: absolute;
+			left: 130px;
+			color: #001080;
+			font-size: 20px;
+		}
+
+		#btnThree {
+			position: absolute;
+			left: 290px;
+			color: #020080;
+			font-size: 20px;
+		}
+
+		#btnFour {
+			position: absolute;
+			left: 410px;
+			color: #0G0080;
+			font-size: 20px;
+		}
+
+		#btnFive {
+			position: absolute;
+			left: 510px;
+			color: #0H0080;
+			font-size: 20px;
+		}
+
+		#body-color {
+
+			position: absolute;
+
+			font-size: 20px;
+		}
+
+		#body-color1 {
+			background-color: green;
+			position: absolute;
+			height: 40px;
+			top: 50px;
+			width: 1340px;
+
+		}
+
+		.abc {
+			background-color: rgb(200, 232, 132);
+		}
+
+		.cde {
+			height: 20px;
+		}
+
+		h1 {
+			position: absolute;
+			left: 270px;
+			top: 110px;
+		}
+
+		#btn {
+			position: absolute;
+			top: 150px;
+			margin: 74px;
+			padding: 14px;
+			border-radius: 18px;
+			left: 155px;
+		}
+
+		#btn1 {
+			position: absolute;
+			right: 370px;
+			top: 143px;
+			margin: 80px;
+			padding: 14px;
+			border-radius: 18px;
+		}
+
+		#para {
+			position: absolute;
+			top: 280px;
+			padding-left: 118px;
+			padding-right: 298px;
+			margin-left: 195px;
+			background-color: powderblue;
+		}
+
+		.list_container {
+			width: 100px;
+			height: 200px;
+			border: 3px solid #E8C48F;
+			padding: 20px;
+			overflow: auto;
+			position: absolute;
+			top: 90px;
+		}
+
+		.item_direction {
+			direction: ltr;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="body-color" class="abc cde">
+		<button>Tutorial</button>
+		<button>References</button>
+		<button>Exercise</button>
+		<button>Video</button>
+		<button>Pro</button>
+	</div>
+	<div id="body-color1">
+		<button id="one" style="font-size:18px;">HTML</button>
+		<button id="Two">CSS</button>
+		<button id="Three">JAVASCRIPT</button>
+		<button id="four">SQL</button>
+		<button id="five">PYTHON</button>
+		<button id="six">PHP</button>
+		<button id="seven">BOOTSTRAP</button>
+		<button id="eight">HOW TO</button>
+		<button id="nine">W3.CSS</button>
+		<button id="ten">JAVA</button>
+		<button id="eleven">JQUERY</button>
+		<button id="twelve">C</button>
+	</div>
+	<h1 style="text-align: center;">HTML Tutorial</h1>
+	<div>
+		<button id="btn">Home</button>
+		<button id="btn1" onclick="myFunction()">Next</button>
+	</div>
+	<div class="list_container">
+		<div class="item_direction">1</div>
+		<div class="item_direction">2</div>
+		<div class="item_direction">3</div>
+		<div class="item_direction">4</div>
+		<div class="item_direction">5</div>
+		<div class="item_direction">6</div>
+		<div class="item_direction">7</div>
+		<div class="item_direction">8</div>
+		<div class="item_direction">9</div>
+		<div class="item_direction">10</div>
+		<div class="item_direction">11</div>
+		<div class="item_direction">12</div>
+	</div>
+
+	<div id="para">
+		<p>HTML is the standard markup language for Web pages.</p>
+		<p>With HTML you can create your own Website.</p>
+		<p>HTML is easy to learn - You will enjoy it!</p>
+		<button id="xyz" style="font-size: 18px;padding-left:25px;padding-right: 25px;font-family: 'sans-serif;';">Study
+			our free HTML Tutorial</button>
+	</div>
+	<script>
+		function myFunction() {
+			document.getElementById('para').innerHTML = "paragraph changed";
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+
+.btn-group .button {
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+		height: 20px;
+		 }
+ .btn-group .button:hover {
+		background-color: #3e8e41;
+	 }
+	 .firstContainer .prime{
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+	  }
+	  
+	  .firstContainer .prime:hover {
+		background-color: #3e8e41;
+	  }
+
+.scroller{
+	width: 200px;
+	height: 800px;
+	overflow-y:scroll ;
+	scrollbar-color: green;
+	scrollbar-width: thin;
+}
+.pqr a{
+	text-decoration: none;
+	display: inline;}
+
+	a:hover{
+		color: gray;
+		background-color: white;
+		border: 1px solid gray;
+		width: 25%;}
+    a:link{
+    	text-decoration: none;}
+div{
+	cursor: pointer;
+}	
+p{
+	margin-left: auto;
+	left: 230px;
+    position: absolute;
+    top: 160px;
+    background: powderblue;
+    text-indent: 50px;
+    text-align: center;
+}
+
+ 
