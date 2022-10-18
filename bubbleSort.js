@@ -49,12 +49,32 @@
 
 //swap two number
 
-let x = 30;
-let y = 40;
+// let x = 30;
+// let y = 40;
  
-x = x + y; 
-y = x - y; 
-x = x - y; 
+// x = x + y; 
+// y = x - y; 
+// x = x - y; 
  
-console.log(`x = ${x}`); 
-console.log(`y = ${y}`); 
+// console.log(`x = ${x}`); 
+// console.log(`y = ${y}`); 
+// console.log("x = " + x);
+// console.log("y = " + y);
+
+let fruits = [
+    {
+        fruit_name: "Apple",
+        fruit_color: "Red"
+    },
+    {
+        fruit_name:"Grapes",
+        fruit_color:"green"
+    },
+    {
+        fruit_name:"Kiwi",
+        fruit_color:"green"
+    }
+];
+
+let filtered_fruits = fruits.filter((fruit)=> fruit.fruit_color==="Red")
+    console.log(filtered_fruits);
