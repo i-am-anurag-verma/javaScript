@@ -82,24 +82,47 @@
 
 ///////////////////key:pair array/////////
 
-let book_id = [1,2,3]
+// let book_id = [1,2,3]
 
-let book_names = [
-    "Live Life Happily...!!",
-    "Be Energetic Always...!!",
-    "Earn Respect...!!"
+// let book_names = [
+//     "Live Life Happily...!!",
+//     "Be Energetic Always...!!",
+//     "Earn Respect...!!"
 
+// ];
+// let book_author = ["Aman", "Ram", "Shyam"];
+
+// let book_copies = [10,20,30];
+
+// let book_details = book_id.map((id, index_value)=>{
+//     return {
+//         id : id,
+//         book_names:book_names[index_value],
+//         book_author:book_author[index_value],
+//         book_copies:book_copies[index_value]
+//     }
+// });
+// console.log(book_details)
+
+/////////////////////////////////////////
+let employees_data = [
+    {
+        employee_id: 1,
+        employee_name: "Aman",
+    },
+    {
+        employee_id: 2,
+        employee_name: "Bhargava",
+    },
+    {
+        employee_id: 3,
+        employee_name: "Chaitanya",
+    },
 ];
-let book_author = ["Aman", "Ram", "Shyam"];
-
-let book_copies = [10,20,30];
-
-let book_details = book_id.map((id, index_value)=>{
-    return {
-        id : id,
-        book_names:book_names[index_value],
-        book_author:book_author[index_value],
-        book_copies:book_copies[index_value]
+for (let object of employees_data) {
+    if (object.employee_id === 1) {
+        object.employee_name = "Anthony";
     }
-});
-console.log(book_details)
+}
+console.log("Updated Data: ");
+console.log(employees_data);
