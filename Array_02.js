@@ -1,9 +1,9 @@
-var str = 'Anurag';
-var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var LOWER = 'abcdefghijklmnopqrstuvwxyz';
-var result = [];
+let str = 'Anurag';
+let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+let result = [];
   
-  for(var x=0; x<str.length; x++)
+  for(let x=0; x<str.length; x++)
   {
     if(UPPER.indexOf(str[x]) !== -1)
     {

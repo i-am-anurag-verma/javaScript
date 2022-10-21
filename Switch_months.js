@@ -1,4 +1,4 @@
-  let month;
+  let month = 13;
  switch(month){
         case 1: 
         month="31 days";
@@ -37,6 +37,6 @@
         month="31 days";
             break;
         default: 
-        month="Invalid input! Please enter month number between 1-12";
+        "Invalid input! Please enter month number between 1-12";
     }
-    console.log("Month is "  )
+    console.log("Month is " + month )
