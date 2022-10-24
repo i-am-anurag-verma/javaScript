@@ -16,7 +16,6 @@ while (low <= high) {
     else if (key == a[mid]) {
         found = 1;
         break;
-    }
-    
+    } 
 }
 console.log("position of key value is " + mid );
