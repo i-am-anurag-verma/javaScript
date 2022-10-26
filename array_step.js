@@ -4,7 +4,7 @@ function rangeBetween(start, end)
 		if (start > end) {
 			const arr1 = new Array(start - end + 1);
 			for (let i = 0; i < arr1.length; i++, start--) {
-				resarrult[i] = start;
+				arr1[i] = start;
 			}
 			return arr1;
 		} 
@@ -20,5 +20,5 @@ function rangeBetween(start, end)
 		}
 	}
 
-console.log(rangeBetwee(4, 7));
-console.log(rangeBetwee(-4, 7));
+console.log(rangeBetween(4, 7));
+console.log(rangeBetween(-4, 7));
