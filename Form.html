@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form</title>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="fname"><br>   
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age"><br>
+  
+  <label for="sex">Sex:</label>
+  M: <input type="radio" name="sex" value="M">
+  F: <input type="radio" name="sex" value="F"><br>
+  
+  <label for="subject">Subject:</label>
+  Math: <input type="checkbox" name="subject[]" value="math">
+  Science: <input type="checkbox" name="subject[]" value="science">
+  Social Science: <input type="checkbox" name="subject[]" value="social science">
+ English: <input type="checkbox" name="subject[]" value="english"><br>
+  
+  <label for="class">Class:</label>
+  <select name="class"|>
+    <option value="">Select your class</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select><br>
+  
+  
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" ></textarea>
+  
+  <br><br>
+  <input type="submit" value="Save">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
