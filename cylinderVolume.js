@@ -4,7 +4,7 @@ function cylinder(hight, diameter){
 }
 cylinder.prototype.volume = function(){
     var radius = this.diameter/2;
-    return this.hight * Math.PI * radius * radius;
+    return Math.PI * Math.pow(radius,2) * this.hight;
 }
 var cyl = new cylinder(7, 4);
 // Volume of the cylinder with four decimal places.

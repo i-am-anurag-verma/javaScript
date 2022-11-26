@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>examination result</title>
+    </head>
+    <body>
+        <h1>Examination Result Form</h1>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" name="fname" placeholder="FirstName" value="" required>
+            <input type="text" name="lname" placeholder="LastName" value="" required><br><br>
+            <labe>Roll Number: </labe>
+            <input type="number" name="rollNumber" value="" min="1" max="20" required><br><br>
+            <label>Class:</label>
+            <select name="class" id="class" required>
+                <option value="">Select Your Class</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br><br>
+            <label>Subject:</label><br>
+           <select required>
+            <option value="">Select Subject</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="s.science">Social Science</option>
+            <option value="english">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Computer">Computer</option>
+           </select><br><br>
+            <label>Obtained Marks</label>
+            <input type="number" name="marks" value="" required><br><br>
+            <label>Maximum Marks:</label>
+            <input type="text" id="Mmarks" name="Mmarks" value="100" disabled><br><br>
+            <label>Teacher Id: </label>
+            <input type="text" name="TeacherId" placeholder="Enter Teacher Id" value="" required><br><br>
+            <label>Remarks:</label><br>
+            <textarea id="remarks" name="remarks" required></textarea><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

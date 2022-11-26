@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hotel booking</title>
+    <style>
+        .label {
+            color: black;
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .btn {
+            padding: 5px 20px;
+            background-color: goldenrod;
+            color: white;
+            border: 1px solid rgb(19, 224, 173);
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-control-label {
+            flex: 2;
+        }
+
+        .form-control-content {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div style="text-align:center; width: 500px;">
+        <h1 style="color:blueviolet;font-size: 40px;">Hotel Booking</h1>
+        <form>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Room Type </label></div>
+                <div class="form-control-content">
+                    <select required style="color: blue;">
+                        <option value="">Select Bed Type</option>
+                        <option value="single">Single Bed Room</option>
+                        <option value="double">Double Bed Room</option>
+                        <option value="Triple">Triple Bed Room</option>
+                        <option value="premium">Premium Bed Room</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Number of Guest </label></div>
+                <div class="form-control-content"><select required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Name</label></div>
+                <div class="form-control-content"><input type="text" name="fname" placeholder="FirstName" required>
+                </div>
+                <div class="form-control-content"><input type="text" name="lname" placeholder="LastName" required></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Email </label></div>
+                <div class="form-control-content"> <input type="email" id="email" placeholder="Enter Your Email"></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Arrival: </label></div>
+                <div class="form-control-content"><input type="date" name="date" value="" required></div>
+                <div class="form-control-content"><input type="time" name="time" value="" required></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Departure: </label></div>
+                <div class="form-control-content"><input type="date" name="date" value=""></div>
+                <div class="form-control-content"><input type="time" name="time" value=""></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Free Pickup: </label></div>
+                <div class="form-control-content">Yes <input type="radio" name="pickup" value="yes" required></div>
+                <div class="form-control-content">No <input type="radio" name="pickup" value="no" required></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Flight Number: </label></div>
+                <div class="form-control-content"><input type="text" placeholder="Enter Flight Number" value=""
+                        maxlength="8" required></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-label"><label class="label">Other Request: </label></div>
+                <div class="form-control-content"><textarea id="request" name="Other-request" required></textarea></div>
+            </div>
+            <div class="form-control">
+                <div class="form-control-content"><input type="submit" value="Submit Now" class="btn"></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

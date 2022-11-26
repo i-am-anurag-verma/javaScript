@@ -5,16 +5,6 @@
     <title>Reservation Form</title>
     <link rel="icon" type="image" sizes="192x192" href="apple-icon.png" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .body {
-            background: url("image/pexels.jpg");
-            background-size: 280%;
-            background-position: -400px 0px;
-        }
 
         .label {
             color: black;
@@ -31,6 +21,14 @@
             width: 400px;
             margin: 100px auto 0px auto;
         }
+        .btn{
+            padding: 5px 20px;
+                background-color: rgb(209, 175, 24);
+                color: white;
+                border: 1px solid rgb(19, 228, 54);
+                border-radius: 10px;
+                font-weight: bold;
+        }
     </style>
 </head>
 
@@ -40,17 +38,17 @@
             <h1 style="color: rgb(4, 206, 17)">Travel Reservation Form</h1>
             <form>
                 <div class="control-form">
-                    <label class="label">Name: </label>
+                    <label for="name" class="label">Name: </label>
                     <div>
-                        <input type="text" name="firstName" placeholder="FirstName" value="" />
-                        <input type="text" name="lastName" placeholder="LastName" value="" />
+                        <input type="text" name="firstName" id="name" placeholder="FirstName" value="" required />
+                        <input type="text" name="lastName" id="name" placeholder="LastName" value="" required />
                     </div>
                 </div>
                 <div class="control-form">
-                    <label class="label">Gender:</label>
+                    <label for="sex"class="label">Gender:</label>
                     <div>
-                        Male<input type="radio" name="sex" value="male" />
-                        Female<input type="radio" name="sex" value="female" />
+                        Male: <input type="radio" name="sex" id="sex" value="male" />
+                        Female: <input type="radio" name="sex" id="sex" value="female" />
                     </div>
                 </div>
                 <div class="control-form">
@@ -82,9 +80,11 @@
                 <div class="control-form">
                     <label for="station" class="label">Station Name: </label>
                     <div>
-                        From: <input type="text" value="" /> To:
-                        <input type="text" value="" />
+                        From: <input type="text" value="" /> 
                     </div>
+                    <div>
+                    To:<input type="text" value="" />
+                </div>
                 </div>
                 <div class="control-form">
                     <label class="label">Select Birth</label>
@@ -99,12 +99,12 @@
                 <div class="control-form">
                     <label class="label">Address: </label>
                     <div>
-                        <textarea id="address" name="address" placeholder="Full Address"></textarea>
+                        <textarea id="address" name="address" cols="80" rows="8" placeholder="Full Address"></textarea>
                     </div>
                 </div>
                 <div class="control-form">
-                    <input type="submit" />
-                    <input type="reset" />
+                    <input type="submit" value="Submit Now" class="btn" />
+                    <input type="reset" class="btn" />
                 </div>
             </form>
         </div>

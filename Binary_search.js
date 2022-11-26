@@ -18,5 +18,5 @@ function binarySearch(arr, val) {
     return -1;
   }
   var arr = [1, 2, 3, 4, 5, 7, 8, 9];
-console.log(binarySearch(arr, 1));   
+console.log(binarySearch(arr, 1));
 console.log(binarySearch(arr, 5));

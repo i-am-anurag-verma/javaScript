@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Form</title>
+  <style>
+    .label {
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+
+    .control-form {
+      margin: 10px;
+      padding: 5px;
+
+    }
+    .control-form-label{
+      flex: 2;
+    }
+    .control-form-content{
+      flex: 3;
+    }
+  </style>
+</head>
+
+<body style="display: flex; justify-content: center;">
+  <div style="text-align:center; width: 500px;">
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+      <div class="control-form">
+        <div class="control-form-label"><label class="label" for="fname">First name:</label></div>
+        <div class="control-form-content"><input type="text" id="fname" name="fname"></div>
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="lname">Last name:</label></div>
+          <div class="control-form-content"><input type="text" id="lname" name="fname"></div>
+        </div>
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="age">Age:</label></div>
+          <div class="control-form-content"><input type="number" id="age" name="age"></div>
+        </div>
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="Gender">Gender:</label></div>
+          <div class="control-form-content">Male: <input type="radio" name="Gender" value="M"></div>
+          <div class="control-form-content">Female: <input type="radio" name="Gender" value="F"></div>
+        </div>
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="subject">Subject:</label></div>
+          <div class="control-form-content">Math: <input type="checkbox" name="subject[]" value="math"></div>
+          <div class="control-form-content">Science: <input type="checkbox" name="subject[]" value="science"></div>
+          <div class="control-form-content">Social Science: <input type="checkbox" name="subject[]" value="social science"></div>
+          <div class="control-form-content">English: <input type="checkbox" name="subject[]" value="english"></div>
+        </div>
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="class">Class:</label></div>
+          <div class="control-form-content"><select name="class" |>
+              <option value="">Select your class</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select></div>
+        </div>
+
+        <div class="control-form">
+          <div class="control-form-label"><label class="label" for="address">Address:</label></div>
+          <div class="control-form-content"><textarea id="address" name="address" cols="40" rows="6"></textarea></div>
+        </div>
+        <div class="control-form">
+          <div class="control-form-content"><input type="submit" value="Save"></div>
+        </div>
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+  </div>
+  </div>
+</body>
+
+</html>

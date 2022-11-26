@@ -12,6 +12,5 @@ for(let i=0; i<a.length-1; i++){
 }
 for(let i=0; i<1; i++){
     console.log(a)
-    console.error(global)
 }
 

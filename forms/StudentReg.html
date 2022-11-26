@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>registration</title>
+  </head>
+  <h1 style="color: rgb(12, 180, 54);" >Student Registration</h1>
+  <body>
+    <form>
+        <fieldset>
+            <legend>Personalia</legend>
+      <label>Name:</label><br />
+      <input type="text" name="name" placeholder="FirstName" style="display: 100px;" required/>
+      <input type="text" name="name" placeholder="LastName" required/><br><br>
+      <label>Sex:</label>
+      Male <input type="radio" name="sex" value="male" required>
+      Female <input type="radio" name="sex" value="female" required><br><br>
+      <label>Email:</label><br>
+      <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+      <label>Student Number:</label><br>
+      <input type="text" id="number" value=""><br><br>
+      <label>Class: </label>
+      <select required>
+        <option value="">Choose Your Class</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select><br><br>
+      <label>Percentage:</label>
+      <input type="text" name="percentage" value=""><br><br>
+      <label>Phone Number</label><br>
+      <input type="text" id="number" placeholder="Phone Number" maxlength="10" required><br><br>
+      <label>Address:</label><br>
+      <textarea type="text" name="address" placeholder="Street Address"></textarea><br>
+      <input type="number" name="Postal-code" placeholder="Postal Code" minlength="6" maxlength="6" required><br><br>
+      <input type="submit">
+    </fieldset>
+    </form>
+  </body>
+</html>

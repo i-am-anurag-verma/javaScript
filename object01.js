@@ -7,4 +7,4 @@ var obj = {
 
 var objLength = Object.keys(obj).length
 
-console.log("Length of object : " + objLength)
+console.log("Length of object : " + objLength)  
