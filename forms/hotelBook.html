@@ -34,11 +34,13 @@
         }
 
         .form-control-label {
-            flex: 2;
+            flex: 3;
+            text-align: left;
         }
 
         .form-control-content {
-            flex: 3;
+            flex: 7;
+            text-align: left;
         }
     </style>
 </head>
@@ -76,9 +78,12 @@
                     </select></div>
             </div>
             <div class="form-control">
-                <div class="form-control-label"><label class="label">Name</label></div>
+                <div class="form-control-label"><label class="label"> FirstName</label></div>
                 <div class="form-control-content"><input type="text" name="fname" placeholder="FirstName" required>
                 </div>
+            </div>
+                <div class="form-control">
+                <div class="form-control-label"><label class="label">Last Name</label></div>
                 <div class="form-control-content"><input type="text" name="lname" placeholder="LastName" required></div>
             </div>
             <div class="form-control">
@@ -87,18 +92,36 @@
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Arrival: </label></div>
-                <div class="form-control-content"><input type="date" name="date" value="" required></div>
-                <div class="form-control-content"><input type="time" name="time" value="" required></div>
+                <div class="form-control-content" style="display:flex;">
+                    <div style="margin-right:5px;">
+                        <input type="date" name="date" value="" required>
+                    </div>
+                    <div>
+                        <input type="time" name="time" value="" required>
+                    </div>
+                </div>
             </div>
+                
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Departure: </label></div>
-                <div class="form-control-content"><input type="date" name="date" value=""></div>
-                <div class="form-control-content"><input type="time" name="time" value=""></div>
+                <div class="form-control-content" style="display: flex;">
+                    <div style="margin-right:5px;">
+                        <input type="date" name="date" value="" required>
+                    </div>
+                    <div>
+                        <input type="time" name="time" value="" required>
+                    </div>
+                </div>
             </div>
+            
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Free Pickup: </label></div>
-                <div class="form-control-content">Yes <input type="radio" name="pickup" value="yes" required></div>
-                <div class="form-control-content">No <input type="radio" name="pickup" value="no" required></div>
+                <div class="form-control-content">
+                    <div>
+                        Yes <input type="radio" name="pickup" value="yes" required>
+                        No <input type="radio" name="pickup" value="no" required>
+                    </div>
+                    </div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Flight Number: </label></div>
