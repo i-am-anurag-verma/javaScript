@@ -4,6 +4,31 @@
 <head>
     <title>hotel booking</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 14px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            background: white;
+            width: 500px;
+            padding: 25px;
+            margin: 50px auto 0;
+            border-top: 5px solid rgb(110, 110, 121);
+            box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .name {
+            width: 100%;
+            padding: 8px 0 8px 40px;
+        }
+
         .label {
             color: black;
             font-size: 12px;
@@ -16,7 +41,6 @@
             padding: 5px;
             display: flex;
             flex-direction: row;
-
         }
 
         .btn {
@@ -46,7 +70,7 @@
 </head>
 
 <body class="body">
-    <div style="text-align:center; width: 500px;">
+    <div class="container">
         <h1 style="color:blueviolet;font-size: 40px;">Hotel Booking</h1>
         <form>
             <div class="form-control">
@@ -79,16 +103,19 @@
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label"> FirstName</label></div>
-                <div class="form-control-content"><input type="text" name="fname" placeholder="FirstName" required>
+                <div class="form-control-content"><input type="text" name="fname" class="name" placeholder="FirstName"
+                        required>
                 </div>
             </div>
-                <div class="form-control">
+            <div class="form-control">
                 <div class="form-control-label"><label class="label">Last Name</label></div>
-                <div class="form-control-content"><input type="text" name="lname" placeholder="LastName" required></div>
+                <div class="form-control-content"><input type="text" name="lname" class="name" placeholder="LastName"
+                        required></div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Email </label></div>
-                <div class="form-control-content"> <input type="email" id="email" placeholder="Enter Your Email"></div>
+                <div class="form-control-content"> <input type="email" id="email" class="name"
+                        placeholder="Enter Your Email"></div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Arrival: </label></div>
@@ -101,7 +128,7 @@
                     </div>
                 </div>
             </div>
-                
+
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Departure: </label></div>
                 <div class="form-control-content" style="display: flex;">
@@ -113,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Free Pickup: </label></div>
                 <div class="form-control-content">
@@ -121,7 +148,7 @@
                         Yes <input type="radio" name="pickup" value="yes" required>
                         No <input type="radio" name="pickup" value="no" required>
                     </div>
-                    </div>
+                </div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Flight Number: </label></div>
