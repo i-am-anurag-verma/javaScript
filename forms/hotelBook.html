@@ -26,7 +26,28 @@
 
         .name {
             width: 100%;
-            padding: 8px 0 8px 40px;
+            padding: 8px 1PX 8px 4px;
+            cursor: pointer;
+        }
+
+        .name:hover {
+            background-color: #f2f2f2;
+        }
+
+        .bed-room {
+            display: inline-block;
+            width: 100%;
+            height: 35px;
+            padding: 0px 15px;
+            cursor: pointer;
+            border: 1px solid #cccccc;
+            color: #7b7b7b;
+            border-radius: 0;
+            background-color: white;
+        }
+
+        .bed-room:hover {
+            background-color: #f2f2f2;
         }
 
         .label {
@@ -43,15 +64,6 @@
             flex-direction: row;
         }
 
-        .btn {
-            padding: 5px 20px;
-            background-color: goldenrod;
-            color: white;
-            border: 1px solid rgb(19, 224, 173);
-            border-radius: 12px;
-            font-weight: bold;
-        }
-
         .body {
             display: flex;
             justify-content: center;
@@ -66,17 +78,34 @@
             flex: 7;
             text-align: left;
         }
+
+        .radio-btn {
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #009fff;
+            color: white;
+            height: 35px;
+            line-height: 35px;
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body class="body">
     <div class="container">
-        <h1 style="color:blueviolet;font-size: 40px;">Hotel Booking</h1>
+        <h1 style="color:blueviolet;font-size: 40px; text-align: center;">Hotel Booking</h1>
         <form>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Room Type </label></div>
                 <div class="form-control-content">
-                    <select required style="color: blue;">
+                    <select class="bed-room" required style="color: blue;">
                         <option value="">Select Bed Type</option>
                         <option value="single">Single Bed Room</option>
                         <option value="double">Double Bed Room</option>
@@ -87,7 +116,8 @@
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Number of Guest </label></div>
-                <div class="form-control-content"><select required>
+                <div class="form-control-content">
+                    <select class="bed-room" required>
                         <option value="">Select</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -99,7 +129,8 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                         <option value="10">10</option>
-                    </select></div>
+                    </select>
+                </div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label"> FirstName</label></div>
@@ -121,10 +152,10 @@
                 <div class="form-control-label"><label class="label">Arrival: </label></div>
                 <div class="form-control-content" style="display:flex;">
                     <div style="margin-right:5px;">
-                        <input type="date" name="date" value="" required>
+                        <input type="date" name="date" class="bed-room" value="" required>
                     </div>
                     <div>
-                        <input type="time" name="time" value="" required>
+                        <input type="time" name="time" class="bed-room" value="" required>
                     </div>
                 </div>
             </div>
@@ -133,10 +164,10 @@
                 <div class="form-control-label"><label class="label">Departure: </label></div>
                 <div class="form-control-content" style="display: flex;">
                     <div style="margin-right:5px;">
-                        <input type="date" name="date" value="" required>
+                        <input type="date" name="date" class="bed-room" value="" required>
                     </div>
                     <div>
-                        <input type="time" name="time" value="" required>
+                        <input type="time" name="time" class="bed-room" value="" required>
                     </div>
                 </div>
             </div>
@@ -145,22 +176,26 @@
                 <div class="form-control-label"><label class="label">Free Pickup: </label></div>
                 <div class="form-control-content">
                     <div>
-                        Yes <input type="radio" name="pickup" value="yes" required>
-                        No <input type="radio" name="pickup" value="no" required>
+                        Yes <input type="radio" class="radio-btn" name="pickup" value="yes" required>
+                        No <input type="radio" class="radio-btn" name="pickup" value="no" required>
                     </div>
                 </div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Flight Number: </label></div>
-                <div class="form-control-content"><input type="text" placeholder="Enter Flight Number" value=""
-                        maxlength="8" required></div>
+                <div class="form-control-content">
+                    <input type="text" class="name" placeholder="Enter Flight Number" value="" maxlength="8" required>
+                </div>
             </div>
             <div class="form-control">
                 <div class="form-control-label"><label class="label">Other Request: </label></div>
-                <div class="form-control-content"><textarea id="request" name="Other-request" required></textarea></div>
+                <div class="form-control-content"><textarea id="request" name="Other-request" class="name" rows="8"
+                        cols="60" required></textarea></div>
             </div>
             <div class="form-control">
-                <div class="form-control-content"><input type="submit" value="Submit Now" class="btn"></div>
+                <div class="form-control-content">
+                    <input type="submit" value="Submit Now" class="btn">
+                </div>
             </div>
         </form>
     </div>
