@@ -3,9 +3,9 @@ function sum_sq(arr){
 
     for(let i = 0; i < arr.length; i++)
     {
-        sum = sum + Math.pow(arr[i], 2)
+        sum = sum + Math.pow(arr[i], 3)
     }
     return sum;
 }
 
-console.log(sum_sq([1,2,3,4,5]))
+console.log(sum_sq([2, 3]))
