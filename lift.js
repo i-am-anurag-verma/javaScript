@@ -1,19 +1,17 @@
-function lift(level,button){
-    var arr = [0, 1, 2, 3];
-    var result = 0
+//6 7 8
 
-    for(var i = 0; i < arr.length; i++){
-        for(var j = 0; j < arr.length; j++){
-            if(level === arr[i] && button === arr[j]){
-                if(level < button){
-                    result = level + button;
-                }else{
-                    result = button - level;
-                }
+const floor = 10;
+const visitPlace = [6,5,7,3,8, 9];
+
+const liftStart = (totalFloor, stopFloor) => {
+    for(let i = 1; i <= totalFloor ; i ++) {
+         stopFloor.forEach(ele => {
+            if(ele === i) {
+                console.log("Stop at " + i);
+            
             }
-        }
+         })
     }
-
-    return result;
 }
-console.log(lift(3, 2))
+
+liftStart(floor, visitPlace)
