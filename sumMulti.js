@@ -8,7 +8,9 @@ function sum_multiply(arr){
         sum = sum + arr[i];
         multi = multi * arr[i]
     }
-    return multi, sum;
+    return {
+        sum,multi
+    };
     
 }
-console.log(sum_multiply([2, 3 ,4,5]))
+console.log(sum_multiply([1,2, 3 ,4,5,6]))
