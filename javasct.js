@@ -2,12 +2,14 @@ const myFun = function (str, input) {
 
     let arr = str.split(',')
 
+    let arr1 = arr.map(Number)
+
     var result = [];
 
-    if (!input) return arr[0];
+    if (!input) return arr1[0];
     for (var i = 0; i < input; i++) 
     {
-        result.push(parseInt(arr[i]));
+        result.push(arr1[i]);
     }
     return result;
 }
