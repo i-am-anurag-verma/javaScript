@@ -1,11 +1,14 @@
-// myString = "This is my string";
+function divisible(num) {
 
-// for(let char in myString){
-//     console.log(myString[char])
-// }
-
-for(var a = 0; a < 11; a++) {
-    setTimeout(() => {
-        console.log(a)
-    }, 0)
+    if (num % 3 == 0 && num % 5 == 0) {
+        return "AB";
+    } else if (num % 3 == 0) {
+        return "A"
+    } else if (num % 5 == 0) {
+        return "B"
+    } else {
+        return "Invalid input"
+    }
 }
+console.log(divisible(1141))
+
