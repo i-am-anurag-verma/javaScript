@@ -10,11 +10,20 @@
     <h1 style="color: #4267B2;">Javascript Tricky Problems</h1>
 </body>
 <script>
-    function func(a,b,c){
-        return a+b+c;
-    }
+    // function func(a,b,c){
+    //     return a+b+c;
+    // }
 
-    console.log(func(2,2,2))
+    // console.log(func(2,2,2))
+
+    function add(a){
+        return(b) =>{
+            return(c)=>{
+              return  a+b+c;
+            }
+        }
+    }
+    console.log(add(3)(2)(3))
 
 </script>
 </html>
