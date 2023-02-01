@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Kanit", sans-serif;
+      }
+      h2 {
+        text-align: center;
+      }
+      .bar {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #34626c;
+      }
+      .bar button {
+        border: none;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 14px;
+        color: white;
+        background-color: #34626c;
+      }
+
+      .bar button:hover {
+        background-color: #cfd3cf;
+      }
+      .bar button:active {
+        background-color: #c6b497;
+      }
+      .barcontent{
+        display: none;
+        padding: 16px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Technologies</h2>
+    <div class="bar">
+      <button class="barlinks" onclick="showtech(event, 'ui')">
+        Front End
+      </button>
+      <button class="barlinks" onclick="showtech(event, 'server')">
+        Server
+      </button>
+      <button class="barlinks" onclick="showtech(event, 'backend')">
+        Backend
+      </button>
+    </div>
+    <div id="ui" class="barcontent">
+      <h3>
+        Front-end web development is the development of the graphical user
+        interface of a website, through the use of HTML, CSS, and JavaScript, so
+        that users can view and interact with that website.
+      </h3>
+    </div>
+    <div id="server" class="barcontent">
+      <h3>
+         so that users can view and interact with that website.
+      </h3>
+    </div>
+    <div id="backend" class="barcontent">
+      <h3>
+        Front-end web development is the development of the graphical user
+        interface of a website, 
+      </h3>
+    </div>
+  </body>
+  <script>
+    function showtech(evt, course){
+        var i;
+        var content = document.getElementsByClassName('barcontent');
+        for(i=0; i<content.length; i++){
+            content[i].style.display = 'none';
+        }
+        var links = document.getElementsByClassName('barlinks');
+        for(i=0; i<links.length; i++){
+        links[i].className = links[i].className.replace('active','');
+        }
+        document.getElementById(course).style.display = "block";
+        evt.currentTarget.className = "active"
+    }
+  </script>
+</html>
